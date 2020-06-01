@@ -24,7 +24,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       : false,
     publicPath: '/',
     proxy: config.dev.proxyTable,
-    quiet: true, 
+    quiet: true,
     watchOptions: {
       poll: config.dev.poll,
     },
@@ -38,7 +38,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     // 启用热更新
     new webpack.HotModuleReplacementPlugin(),
     // 跳过编译出错
-    new webpack.NoEmitOnErrorsPlugin(),
+    // new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './examples/index.html',

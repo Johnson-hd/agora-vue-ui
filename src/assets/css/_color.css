@@ -1,0 +1,134 @@
+:root {
+  /**
+   * 主色-品牌色
+  **/
+  --colorPrimary: #008df2;
+  --colorPrimary-1: #ebf6ff;
+  --colorPrimary-2: #d6eeff;
+  --colorPrimary-3: #c2e5ff;
+  --colorPrimary-4: #99d4ff;
+  --colorPrimary-5: #5cbbff;
+  --colorPrimary-6: #008df2;
+  --colorPrimary-7: #007dd6;
+  --colorPrimary-8: #0068b3;
+  --colorPrimary-9: #00538f;
+  --colorPrimary-10: #003e6b;
+  /**
+  * 灰色-品牌色
+  **/
+  --colorGrey-1: #f7f9fa;
+  --colorGrey-2: #f0f3f5;
+  --colorGrey-3: #e6eaed;
+  --colorGrey-4: #d7dde0;
+  --colorGrey-5: #c9cfd4;
+  --colorGrey-6: #b4babf;
+  --colorGrey-7: #919699;
+  --colorGrey-8: #626466;
+  --colorGrey-9: #252626;
+  --colorGrey-10: #0c0d0d;
+  /**
+  * 辅色a
+  **/
+  --color-a-1: rgba(0, 141, 242, 1);
+  --color-a-2: rgba(10, 122, 242, 0.83);
+  --color-a-3: rgba(19, 105, 242, 0.67);
+  --color-a-4: rgba(29, 89, 242, 0.5);
+  --color-a-5: rgba(39, 76, 242, 0.33);
+  --color-a-6: rgba(48, 65, 242, 0.17);
+  /**
+  * 辅色b
+  **/
+  --color-b-1: rgba(0, 141, 242, 1);
+  --color-b-2: rgba(0, 160, 234, 0.83);
+  --color-b-3: rgba(0, 178, 227, 0.67);
+  --color-b-4: rgba(0, 194, 219, 0.5);
+  --color-b-5: rgba(0, 208, 212, 0.33);
+  --color-b-6: rgba(0, 204, 187, 0.17);
+  /**
+  * 多色
+  **/
+  --multiColor-1: #008df2;
+  --multiColor-2: #ffd863;
+  --multiColor-3: #4bccc1;
+  --multiColor-4: #99a1ff;
+  --multiColor-5: #9670cc;
+  --multiColor-6: #c147cc;
+  --multiColor-7: #87ebff;
+  --multiColor-8: #34c6e3;
+  --multiColor-9: #0eaccc;
+  --multiColor-10: #093999;
+
+  /* 白色 */
+  --colorPure: #ffffff;
+
+  /* 功能色 */
+  --function-1: #12b262;
+  --function-2: #f5b301;
+  --function-3: #f96900;
+  --function-4: #e63d2e;
+
+  /* 绿 */
+  --colorGreen: #12b262;
+  --colorGreen-1: color(var(--colorGreen) tint(92%));
+  --colorGreen-2: color(var(--colorGreen) tint(80%));
+  --colorGreen-3: color(var(--colorGreen) tint(64%));
+  --colorGreen-4: color(var(--colorGreen) tint(46%));
+  --colorGreen-5: color(var(--colorGreen) tint(24%));
+  --colorGreen-6: var(--colorGreen);
+  --colorGreen-7: color(var(--colorGreen) shade(14%));
+  --colorGreen-8: color(var(--colorGreen) shade(25%));
+  --colorGreen-9: color(var(--colorGreen) shade(40%));
+  --colorGreen-10: color(var(--colorGreen) shade(55%));
+
+  /* 黄 */
+  --colorYellow: #f5b301;
+  --colorYellow-1: color(var(--colorYellow) tint(92%));
+  --colorYellow-2: color(var(--colorYellow) tint(80%));
+  --colorYellow-3: color(var(--colorYellow) tint(64%));
+  --colorYellow-4: color(var(--colorYellow) tint(46%));
+  --colorYellow-5: color(var(--colorYellow) tint(24%));
+  --colorYellow-6: var(--colorYellow);
+  --colorYellow-7: color(var(--colorYellow) shade(14%));
+  --colorYellow-8: color(var(--colorYellow) shade(25%));
+  --colorYellow-9: color(var(--colorYellow) shade(40%));
+  --colorYellow-10: color(var(--colorYellow) shade(55%));
+
+  /* 橘 */
+  --colorOrange: #f96900;
+  --colorOrange-1: color(var(--colorOrange) tint(92%));
+  --colorOrange-2: color(var(--colorOrange) tint(80%));
+  --colorOrange-3: color(var(--colorOrange) tint(64%));
+  --colorOrange-4: color(var(--colorOrange) tint(46%));
+  --colorOrange-5: color(var(--colorOrange) tint(24%));
+  --colorOrange-6: var(--colorOrange);
+  --colorOrange-7: color(var(--colorOrange) shade(14%));
+  --colorOrange-8: color(var(--colorOrange) shade(25%));
+  --colorOrange-9: color(var(--colorOrange) shade(40%));
+  --colorOrange-10: color(var(--colorOrange) shade(55%));
+
+  /* 红 */
+  --colorRed: #e63d2e;
+  --colorRed-1: color(var(--colorRed) tint(92%));
+  --colorRed-2: color(var(--colorRed) tint(80%));
+  --colorRed-3: color(var(--colorRed) tint(64%));
+  --colorRed-4: color(var(--colorRed) tint(46%));
+  --colorRed-5: color(var(--colorRed) tint(24%));
+  --colorRed-6: var(--colorRed);
+  --colorRed-7: color(var(--colorRed) shade(14%));
+  --colorRed-8: color(var(--colorRed) shade(25%));
+  --colorRed-9: color(var(--colorRed) shade(40%));
+  --colorRed-10: color(var(--colorRed) shade(55%));
+
+  /* 蓝 */
+  --colorBlue: #4285f4;
+  --colorBlue-1: color(var(--colorBlue) tint(92%));
+  --colorBlue-2: color(var(--colorBlue) tint(80%));
+  --colorBlue-3: color(var(--colorBlue) tint(64%));
+  --colorBlue-4: color(var(--colorBlue) tint(46%));
+  --colorBlue-5: color(var(--colorBlue) tint(24%));
+  --colorBlue-6: var(--colorBlue);
+  --colorBlue-7: color(var(--colorBlue) shade(14%));
+  --colorBlue-8: color(var(--colorBlue) shade(25%));
+  --colorBlue-9: color(var(--colorBlue) shade(40%));
+  --colorBlue-10: color(var(--colorBlue) shade(55%));
+}

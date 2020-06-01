@@ -1,7 +1,6 @@
 <template>
-  <div>
-    app
-    <agora-button />
+  <div class="app">
+    <router-view />
   </div>
 </template>
 <script lang="ts">

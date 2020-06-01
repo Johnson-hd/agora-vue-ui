@@ -1,0 +1,134 @@
+:root {
+  /* 功能色 */
+  --colorSuccess: var(--function-1);
+  --colorWarning: var(--function-2);
+  --colorDanger: var(--function-4);
+  --colorInfo: var(--colorPrimary);
+  --colorDisabled: var(--colorGrey-6);
+  --colorHover: var(--colorPrimary-5);
+  --colorActive: var(--colorPrimary-6);
+
+  /* base */
+  --componentBackground: var(--colorPure);
+
+  --headingColor: var(--colorGrey-10);
+  --textColor: var(--colorGrey-10);
+  --textColorDisabled: var(--colorGrey-6);
+
+  --headingColorSecondary: var(--colorGrey-7);
+  --textColorSecondary: var(--colorGrey-7);
+
+  --textColorDark: var(--colorGrey-1);
+  --headingColorSecondaryDark: var(--colorGrey-2);
+  --textColorSecondaryDark: var(--colorGrey-5);
+
+  --lineHeightBase: 1.5;
+
+  --formHeight: 36px;
+
+  /* Animation */
+  --animationSlower: 0.5s;
+  --animationSlow: 0.3s;
+  --animationBase: 0.2s;
+  --animationFast: 0.1s;
+  --animationRushOutBezier: cubic-bezier(0.05, 0.8, 0.59, 0.39);
+  --animationSlideBezier: cubic-bezier(0.55, 0, 0.1, 1);
+
+  /* zIndex */
+  --zIndexLayout: 10;
+  --zIndexMask: 1000;
+  --zIndexTooltip: 1010;
+  --zIndexDropdown: 1020;
+  --zIndexDialog: 1030;
+
+  /**
+   * link
+   */
+  --linkColor: var(--colorPrimary);
+  --linkColorHover: var(--colorPrimary-7);
+  --linkColorActive: var(--colorPrimary-7);
+  --linkDecoration: none;
+
+  /**
+   * Border
+   */
+  --borderColorBase: var(--colorGrey-5);
+  --borderColorHover: var(--colorHover);
+  --borderColorActive: var(--colorActive);
+  --borderRadiusBase: 0;
+  --borderRadiusSm: 0;
+
+  --borderColorWarning: var(--function-3);
+
+  /**
+   * background
+   */
+  --backgroundColorBase: var(--colorGrey-2);
+  --backgroundColorDisabled: var(--backgroundColorBase);
+  --backgroundColorActive: var(--colorActive);
+  --backgroundColorHover: var(--colorHover);
+  --backgroundColorWarning: var(--colorYellow-2);
+  --backgroundColorSuccess: var(--colorGreen-3);
+
+  /**
+   * Z-index
+   */
+  --zIndexBase: 1;
+  --zIndexItemHover: 2;
+  --zIndexItemActive: 3;
+  --zIndexNav: 1000;
+  --zIndexMask: 1000;
+  --zIndexModal: 1100;
+  --zIndexAlert: 1200;
+
+  /**
+   * 阴影
+   */
+  --boxShadowBase: 0 2px 3px 0 #818283;
+
+  /**
+   * mask
+   */
+  --maskColor: rgba(0, 0, 0, 0.7);
+
+  /**
+   * 字体
+   */
+  --fontFamily: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑',
+    'Heiti SC', Tahoma, Arial, sans-serif;
+
+  /* size */
+  --fontSizeSm: 12px;
+  --fontSizeMd: 14px;
+  --fontSizeLg: 16px;
+
+  /**
+   * Button
+   */
+  --buttonHeightSm: 30px;
+  --buttonHeightMd: 36px;
+  --buttonHeightLg: 40px;
+
+  --buttonPaddingSm: 0 20px;
+  --buttonPaddingMd: 0 20px;
+  --buttonPaddingLg: 0 30px;
+
+  /**
+   * input框
+   */
+  --inputHeightSm: 30px;
+  --inputHeightMd: 36px;
+  --inputHeightLg: 40px;
+
+  --inputPaddingSm: 1px 7px;
+  --inputPaddingMd: 4px 10px;
+  --inputPaddingLg: 6px 10px;
+
+  --inputColor: var(--colorGrey-9);
+  --inputColorPlaceHolder: #ccc;
+  --inputBorderColor: var(--borderColorBase);
+  --inputBorderColorHover: var(--borderColorHover);
+  --inputBackgroundColor: var(--colorPure);
+  --inputBackgroundColorDisabled: var(--backgroundColorDisabled);
+  --inputAddonBackgroundColor: var(--colorGrey-3);
+}

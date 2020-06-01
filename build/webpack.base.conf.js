@@ -39,6 +39,11 @@ module.exports = {
           transpileOnly: true
         }
       },
+      // css
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
+      },
       // 图片
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
