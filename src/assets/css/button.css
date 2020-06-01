@@ -18,3 +18,23 @@
   color: var(--colorPrimary);
   border-color: var(--colorPrimary);
 }
+
+.agora-button-size-sm {
+  height: var(--buttonHeightSm);
+  line-height: calc(var(--buttonHeightSm) - 2px);
+  padding: var(--buttonPaddingSm);
+}
+
+.agora-button-size-md {
+  font-size: var(--fontSizeMd);
+  height: var(--buttonHeightMd);
+  line-height: calc(var(--buttonHeightMd) - 2px);
+  padding: var(--buttonPaddingMd);
+}
+
+.agora-button-size-lg {
+  font-size: var(--fontSizeMd);
+  height: var(--buttonHeightLg);
+  line-height: calc(var(--buttonHeightLg) - 2px);
+  padding: var(--buttonPaddingLg);
+}

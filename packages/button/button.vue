@@ -38,7 +38,7 @@ export default class AgoraButton extends Vue {
   clicked = false
   timeout: any = null
 
-  classes() {
+  get classes() {
     return [
       {
         'is-disabled': this.disabled,
