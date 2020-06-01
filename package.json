@@ -54,13 +54,7 @@
     }
   },
   "lint-staged": {
-    "*.{vue,ts,tsx,js}": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.{css,scss}": [
-      "prettier --parser=css --write",
-      "git add"
-    ]
+    "*.{vue,ts,tsx,js}": ["eslint --fix"],
+    "*.{css,scss}": [ "prettier --parser=css --write"]
   }
 }
