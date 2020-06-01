@@ -2,8 +2,8 @@ const path = require('path')
 
 module.exports = {
   dev: {
-    host: '0.0.0.0', 
-    port: 1112, 
+    host: '0.0.0.0',
+    port: 1112,
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,

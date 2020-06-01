@@ -182,13 +182,6 @@
   optionalDependencies:
     prettier "^1.18.2"
 
-"@vue/eslint-config-typescript@^5.0.2":
-  version "5.0.2"
-  resolved "https://registry.npm.taobao.org/@vue/eslint-config-typescript/download/@vue/eslint-config-typescript-5.0.2.tgz#c2f3328e70d55d10aeb826f209405397960548c7"
-  integrity sha1-wvMyjnDVXRCuuCbyCUBTl5YFSMc=
-  dependencies:
-    vue-eslint-parser "^7.0.0"
-
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.npm.taobao.org/@webassemblyjs/ast/download/@webassemblyjs/ast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"
@@ -5238,6 +5231,11 @@ vue-property-decorator@^8.4.2:
   integrity sha1-AW4X8ln3O8VH53pQzigroY207kE=
   dependencies:
     vue-class-component "^7.1.0"
+
+vue-router@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-3.3.2.tgz?cache=0&sync_timestamp=1590759571191&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-router%2Fdownload%2Fvue-router-3.3.2.tgz#0099de402edb2fe92f9711053ab5a2156f239cad"
+  integrity sha1-AJneQC7bL+kvlxEFOrWiFW8jnK0=
 
 vue-style-loader@^4.1.0:
   version "4.1.2"

@@ -10,7 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/Johnson-hd/agora-vue-ui.git"
   },
-  "keywords": ["agora", "vue", "ui"],
+  "keywords": [
+    "agora",
+    "vue",
+    "ui"
+  ],
   "author": "houdong@agora.io",
   "license": "MIT",
   "bugs": {
@@ -20,7 +24,6 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.0.2",
     "@typescript-eslint/parser": "^3.0.2",
-    "@vue/eslint-config-typescript": "^5.0.2",
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
@@ -42,7 +45,8 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-router": "^3.3.2"
   },
   "husky": {
     "hooks": {
@@ -50,8 +54,13 @@
     }
   },
   "lint-staged": {
-    "*.{vue,ts,tsx,js}": ["eslint --cache --fix"],
-    "*.json": ["prettier --parser=json --write"],
-    "*.{css,scss}": ["prettier --parser=css --write"]
+    "*.{vue,ts,tsx,js}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{css,scss}": [
+      "prettier --parser=css --write",
+      "git add"
+    ]
   }
 }

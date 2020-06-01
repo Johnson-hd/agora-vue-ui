@@ -5,16 +5,14 @@
     "strict": true,
     "jsx": "preserve",
     "moduleResolution": "node",
-    // 启用装饰器
-    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true, // 启用装饰器
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*", "examples/*", "packages/*"]
+      "@/*": ["src/*"]
     },
     "lib": ["dom", "es6"],
-    // 在表达式和声明上有隐含的any类型时报错
-    "noImplicitAny": true
+    "noImplicitAny": false // 在表达式和声明上有隐含的any类型时报错
   },
   "include": [
     "examples/**/*.ts",

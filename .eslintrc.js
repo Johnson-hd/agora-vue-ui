@@ -1,3 +1,5 @@
+/** @format */
+
 module.exports = {
   root: true,
   env: {
@@ -5,24 +7,20 @@ module.exports = {
     es6: true,
     node: true,
   },
+  parser: 'vue-eslint-parser', // 解析 .vue 文件
   parserOptions: {
-    parser: "@typescript-eslint/parser",
-    sourceType: 'module',
-    ecmaVersion: 6,
+    parser: '@typescript-eslint/parser', // 解析 .ts 文件
   },
   plugins: ['@typescript-eslint', 'prettier', 'vue'],
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    '@vue/typescript',
     'plugin:vue/recommended',
-    'prettier',
+    'plugin:prettier/recommended',
     'prettier/@typescript-eslint',
-    'prettier/vue',
+    'plugin:@typescript-eslint/recommended',
   ],
   rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
-  }
-};
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+  },
+}
