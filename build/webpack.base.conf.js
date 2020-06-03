@@ -39,6 +39,22 @@ module.exports = {
           transpileOnly: true
         }
       },
+      // md
+      {
+        test: /\.md$/,
+        loader: [
+          {
+            loader: 'vue-loader'
+          },
+          {
+            loader: 'agora-md2vue-loader',
+            options: {
+              template: path.resolve(__dirname, '../examples/default.tpl')
+            }
+          }
+        ],
+        include: [path.resolve(__dirname, '../examples/views/component')],
+      },
       // css
       {
         test: /\.css$/,

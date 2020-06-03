@@ -1,9 +1,15 @@
 import { PluginObject } from 'vue'
 
+// button
 import AgoraButton from '../packages/button'
 import AgoraButtonGroup from '../packages/button-group'
 
-const components = [AgoraButton, AgoraButtonGroup]
+// menu
+import AgoraMenu from '../packages/menu'
+import AgoraMenuItem from '../packages/menu-item'
+import AgoraMenuSubmenu from '../packages/menu-submenu'
+
+const components = [AgoraButton, AgoraButtonGroup, AgoraMenu, AgoraMenuItem, AgoraMenuSubmenu]
 
 const plugins: PluginObject<Vue>[] = []
 
@@ -25,4 +31,7 @@ export default {
   install,
   AgoraButton,
   AgoraButtonGroup,
+  AgoraMenu,
+  AgoraMenuItem,
+  AgoraMenuSubmenu,
 }

@@ -9,3 +9,5 @@ declare module 'vue/types/vue' {
 declare global {
 
 }
+
+declare module '*.md'

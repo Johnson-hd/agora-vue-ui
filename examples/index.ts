@@ -4,6 +4,7 @@ import Router from './routes'
 import App from './app.vue'
 
 import '../src/assets/css/index.css'
+import './assets/css/index.css'
 
 Vue.use(AgoraUI)
 

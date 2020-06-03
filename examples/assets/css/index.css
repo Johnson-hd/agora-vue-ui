@@ -1,0 +1,10 @@
+@import './prism.css';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.component-wrapper {
+}
