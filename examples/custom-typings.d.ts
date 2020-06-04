@@ -6,8 +6,8 @@ declare module 'vue/types/vue' {
   }
 }
 
+declare module '*.md'
+
 declare global {
 
 }
-
-declare module '*.md'

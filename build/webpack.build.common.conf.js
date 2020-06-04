@@ -1,8 +1,7 @@
 const merge = require('webpack-merge')
 
 const { baseWebpackConfig } = require('./webpack.base.conf')
-const config = require('../config')
-
+const config = require('./config')
 
 const buildCommonWebpackConfig = merge(baseWebpackConfig, {
   mode: 'production',
@@ -13,7 +12,9 @@ const buildCommonWebpackConfig = merge(baseWebpackConfig, {
     path: config.build.outputPath,
     libraryTarget: 'commonjs2',
     filename: 'index.js'
-  }
+  },
+
+  externals: config.build.commonExternals
 })
 
 module.exports = buildCommonWebpackConfig

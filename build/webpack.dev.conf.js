@@ -3,7 +3,7 @@ const merge = require('webpack-merge')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const { baseWebpackConfig } = require('./webpack.base.conf')
-const config = require('../config')
+const config = require('./config')
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT

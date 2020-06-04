@@ -3,7 +3,7 @@ const fs = require('fs')
 const merge = require('webpack-merge')
 
 const { baseWebpackConfig } = require('./webpack.base.conf')
-const config = require('../config')
+const config = require('./config')
 
 let entry = {}
 fs.readdirSync('src/assets/css').forEach(function (file) {
@@ -18,7 +18,7 @@ const buildCssWebpackConfig = merge(baseWebpackConfig, {
   entry: entry,
 
   output: {
-    path: config.build.outputPath,
+    path: config.build.outputCssPath,
     filename: '[name].css'
   }
 })

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "agora vue ui",
   "author": "houdong@agora.io",
-  "private": false,
   "keywords": [
     "agora",
     "vue",
@@ -17,6 +16,17 @@
   "bugs": {
     "url": "https://github.com/Johnson-hd/agora-vue-ui/issues"
   },
+  "main": "lib/index.js",
+  "style": "lib/index.css",
+  "files": [
+    "lib",
+    "src",
+    "README.md"
+  ],
+  "sideEffects": [
+    "lib/css/*.css",
+    "*.css"
+  ],
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "build:standalone": "cross-env NODE_ENV=production webpack --inline --progress --config build/webpack.build.standalone.conf.js",
@@ -24,6 +34,9 @@
     "build:component": "cross-env NODE_ENV=production webpack --inline --progress --config build/webpack.build.component.conf.js",
     "build:css": "cross-env NODE_ENV=production webpack --inline --progress --config build/webpack.build.css.conf.js",
     "build": "cross-env NODE_ENV=production yarn build:standalone && yarn build:common && yarn build:component && yarn build:css"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.0.2",
