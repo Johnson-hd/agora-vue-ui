@@ -13,9 +13,7 @@ const buildCommonWebpackConfig = merge(baseWebpackConfig, {
     path: config.build.outputPath,
     libraryTarget: 'commonjs2',
     filename: 'index.js'
-  },
-
-  devtool: config.build.devtool,
+  }
 })
 
 module.exports = buildCommonWebpackConfig

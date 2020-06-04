@@ -1,3 +1,6 @@
+@import './_color.css';
+@import './_var.css';
+
 .agora-button,
 .agora-button-default {
   position: relative;

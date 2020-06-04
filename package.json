@@ -18,17 +18,18 @@
     "url": "https://github.com/Johnson-hd/agora-vue-ui/issues"
   },
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "build:common": "webpack --inline --config build/webpack.build.common.conf.js",
-    "build:component": "webpack --inline --config build/webpack.build.component.conf.js",
-    "build:css": "webpack --inline --config build/webpack.build.css.conf.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "build:common": "cross-env NODE_ENV=production webpack --inline --progress --config build/webpack.build.common.conf.js",
+    "build:component": "cross-env NODE_ENV=production webpack --inline --progress --config build/webpack.build.component.conf.js",
+    "build:css": "cross-env NODE_ENV=production webpack --inline --progress --config build/webpack.build.css.conf.js"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.0.2",
     "@typescript-eslint/parser": "^3.0.2",
     "agora-md2vue-loader": "^1.0.1",
+    "cross-env": "^7.0.2",
     "css-loader": "^3.5.3",
+    "cssnano": "^4.1.10",
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
@@ -38,10 +39,12 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.7",
     "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-cssnext": "^3.1.0",
-    "postcss-custom-properties": "^9.1.1",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
+    "postcss-safe-parser": "^4.0.2",
+    "postcss-url": "^8.0.0",
     "prettier": "^2.0.5",
     "style-loader": "^1.2.1",
     "ts-loader": "^7.0.5",
