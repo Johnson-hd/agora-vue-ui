@@ -2,13 +2,24 @@ const webpack = require('webpack')
 const merge = require('webpack-merge')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-const baseWebpackConfig = require('./webpack.base.conf')
+const { baseWebpackConfig } = require('./webpack.base.conf')
 const config = require('../config')
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT
 
 const devWebpackConfig = merge(baseWebpackConfig, {
+  mode: 'development',
+
+  entry: {
+    app: './examples/index.ts',
+  },
+
+  output: {
+    path: config.build.outputPath,
+    publicPath: '/'
+  },
+
   devtool: config.dev.devtool,
 
   devServer: {
@@ -32,13 +43,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   },
 
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env': 'development'
-    }),
     // 启用热更新
     new webpack.HotModuleReplacementPlugin(),
-    // 跳过编译出错
-    // new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './examples/index.html',

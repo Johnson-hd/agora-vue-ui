@@ -1,0 +1,42 @@
+@import './_color.css';
+@import './_var.css';
+.agora-button,
+.agora-button-default {
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  font-size: var(--fontSizeSm);
+  user-select: none;
+  border-radius: var(--borderRadiusBase);
+  background: var(--colorPure);
+  color: var(--colorPrimary);
+  border-color: var(--colorPrimary);
+}
+
+.agora-button-size-sm {
+  height: var(--buttonHeightSm);
+  line-height: calc(var(--buttonHeightSm) - 2px);
+  padding: var(--buttonPaddingSm);
+}
+
+.agora-button-size-md {
+  font-size: var(--fontSizeMd);
+  height: var(--buttonHeightMd);
+  line-height: calc(var(--buttonHeightMd) - 2px);
+  padding: var(--buttonPaddingMd);
+}
+
+.agora-button-size-lg {
+  font-size: var(--fontSizeMd);
+  height: var(--buttonHeightLg);
+  line-height: calc(var(--buttonHeightLg) - 2px);
+  padding: var(--buttonPaddingLg);
+}

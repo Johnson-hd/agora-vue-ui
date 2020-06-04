@@ -10,9 +10,11 @@ module.exports = {
     poll: false,
     proxyTable: {},
     devtool: 'eval-source-map',
+    outputPath: path.resolve(__dirname, '../dist'),
   },
   build: {
-    outputPath: path.resolve(__dirname, '../dist'),
-    devtool: '#source-map',
+    entry: path.resolve(__dirname, '../src/index.ts'),
+    outputPath: path.resolve(__dirname, '../lib'),
+    devtool: '#source-map'
   }
 }

@@ -1,6 +1,8 @@
 # 文件夹
 build/
 config/
+dist/
+lib/
 
 # 文件
 *.d.ts

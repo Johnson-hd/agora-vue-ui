@@ -1,20 +1,18 @@
 const path = require('path')
 const { VueLoaderPlugin } = require('vue-loader')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-const config = require('../config')
+const isProd = process.NODE_ENV === 'production'
 
-module.exports = {
-  entry: {
-    app: './examples/index.ts'
-  },
+module.exports.postcss = {
+  loader: 'postcss-loader',
+  options: {
+    plugins: [require('postcss-import'), require('postcss-cssnext'), require('postcss-custom-properties')]
+  }
+}
 
-  output: {
-    path: config.build.outputPath,
-    filename: '[name].js',
-    publicPath: '/'
-  },
-
+const baseWebpackConfig = {
   resolve: {
     extensions: ['.vue', '.js', '.ts', '.tsx'],
     alias: {
@@ -58,7 +56,7 @@ module.exports = {
       // css
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
+        use: [isProd ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader', 'postcss-loader'],
       },
       // 图片
       {
@@ -96,10 +94,25 @@ module.exports = {
     new ForkTsCheckerWebpackPlugin({
       checkSyntacticErrors: true,
       vue: true
-    })
+    }),
+    // 跳过编译出错
+    // new webpack.NoEmitOnErrorsPlugin(),
   ],
 
   stats: {
-    colors: true
+    colors: true,
+    errors: true,
+    errorDetails: true,
+    warnings: true
   }
 }
+
+if (isProd) {
+  baseWebpackConfig.plugins.push(
+    new MiniCssExtractPlugin({
+      filename: "/[name].css"
+    })
+  )
+}
+
+module.exports.baseWebpackConfig = baseWebpackConfig

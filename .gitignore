@@ -1,5 +1,7 @@
 # 文件夹
 node_modules/
+dist/
+lib/
 
 # 文件
 .eslintcache
