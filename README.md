@@ -17,7 +17,7 @@
 7. `git push origin --tags`
 8. `npm publish`
 
-### 🔗链接
+### 链接
 - [更新日志](./CHAGELOG.md)
 
 ### Todo
