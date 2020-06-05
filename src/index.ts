@@ -9,11 +9,22 @@ import AgoraMenu from '../packages/menu'
 import AgoraMenuItem from '../packages/menu-item'
 import AgoraMenuSubmenu from '../packages/menu-submenu'
 
-const components = [AgoraButton, AgoraButtonGroup, AgoraMenu, AgoraMenuItem, AgoraMenuSubmenu]
+// 国际化
+import Locale from './locale'
 
+interface options {
+  locale: string
+  i18n: any
+}
+
+const components = [AgoraButton, AgoraButtonGroup, AgoraMenu, AgoraMenuItem, AgoraMenuSubmenu]
 const plugins: PluginObject<Vue>[] = []
 
-const install = (Vue: any) => {
+const install = (Vue: any, options?: options) => {
+  if (options) {
+    Locale.use(options.locale, options.i18n)
+  }
+
   components.map((component: any) => {
     Vue.component(component.name, component)
   })

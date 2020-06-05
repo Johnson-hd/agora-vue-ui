@@ -10,6 +10,8 @@
       <router-link to="/theme">
         主题
       </router-link>
+      <span @click="toggleLang('zh')">中文</span>
+      <span @click="toggleLang('en')">英文</span>
     </header>
     <main class="app-main">
       <router-view />
@@ -18,10 +20,16 @@
 </template>
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
+import Cookie from 'js-cookie'
 
 @Component({})
 export default class App extends Vue {
   year: number = new Date().getFullYear()
+
+  toggleLang(lang: string) {
+    Cookie.set('currentLocale', lang)
+    location.reload()
+  }
 }
 </script>
 <style>
@@ -38,6 +46,10 @@ export default class App extends Vue {
     align-items: center;
     & a {
       margin: 0 20px;
+    }
+    & span {
+      cursor: pointer;
+      margin-right: 20px;
     }
   }
 }

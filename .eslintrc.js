@@ -11,7 +11,7 @@ module.exports = {
   parserOptions: {
     parser: '@typescript-eslint/parser', // 解析 .ts 文件
   },
-  plugins: ['@typescript-eslint', 'prettier', 'vue'],
+  plugins: ['@typescript-eslint', 'vue'],
   extends: [
     'plugin:vue/recommended',
     'plugin:prettier/recommended',
@@ -23,5 +23,7 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     'vue/max-attributes-per-line': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/no-extra-semi': 'off',
   },
 }

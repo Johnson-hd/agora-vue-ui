@@ -22,7 +22,7 @@ English | [简体中文](./README.md)
 
 ### Todo
 - [ ] customize the theme
-- [ ] internationalization
+- [x] internationalization
 - [x] agora-md-loader
 - [ ] official website
 - [x] pack AgoraUI
