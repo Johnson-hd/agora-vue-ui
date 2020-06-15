@@ -17,6 +17,41 @@ Vue.use(AgoraUI, {
 })
 ```
 
+### 按需引入方案
+1. 支持只引入部分组件
+```bash
+import AgoraButton from 'agora-vue-ui/lib/button'
+import 'agora-vue-ui/lib/css/button.css'
+
+Vue.component('AgoraButton', AgoraButton)
+```
+
+2. 可以借助插件[babel-plugin-import](https://github.com/ant-design/babel-plugin-import)更方便地按需引入组件
+```bash
+npm install babel-plugin-import --D
+```
+
+在 `.babelrc` 里加入
+
+```json
+{
+  "plugins": [
+    ["import", { "libraryName": "agora-vue-ui" }]
+  ]
+}
+```
+
+项目里
+
+```javascript
+import 'agora-vue-ui/lib/css/index.css'
+
+import { Button, Input } from 'agora-vue-ui'
+Vue.component('AgoraButton', Button)
+Vue.component('AgoraInput', Input)
+```
+
+
 ### 开发规范
 1. 开发时切新分支，比如`feat/xxx`
 2. 开发分支合到`master`
@@ -34,7 +69,7 @@ Vue.use(AgoraUI, {
 - [ ] 自定义主题
 - [x] 国际化
 - [ ] 单独引入组件时的国际化问题
-- [ ] 按需引入
+- [x] 按需引入
 - [x] `agora-md-loader`
 - [ ] 官网
 - [x] 打包
