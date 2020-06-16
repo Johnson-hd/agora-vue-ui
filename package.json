@@ -18,10 +18,12 @@
   },
   "main": "lib/index.js",
   "style": "lib/index.css",
+  "typings": "types/index.d.ts",
   "files": [
     "lib",
     "src",
-    "README.md"
+    "packages",
+    "types"
   ],
   "sideEffects": [
     "lib/css/*.css",
