@@ -7,9 +7,7 @@
 			{{{vue}}}
 		</div>
 		<div class="code-wrapper">
-			<pre>
-        <code v-pre>{{{code}}}</code>
-      </pre>
+			<pre><code v-pre>{{{code}}}</code></pre>
 		</div>
 	</div>
 </template>

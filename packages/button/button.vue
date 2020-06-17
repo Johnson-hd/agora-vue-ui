@@ -1,12 +1,10 @@
 <template>
   <button class="agora-button" :type="htmlType" :class="classes" :disabled="disabled" @click="onClick">
-    <span>{{ t('months.January') }}</span>
     <slot />
   </button>
 </template>
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
-import { t } from '../../src/locale'
 
 @Component({})
 export default class AgoraButton extends Vue {
@@ -39,7 +37,6 @@ export default class AgoraButton extends Vue {
 
   clicked = false
   timeout: any = null
-  t = t
 
   get classes() {
     return [
