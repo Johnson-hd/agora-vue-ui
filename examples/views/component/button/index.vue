@@ -23,3 +23,12 @@ import MdSize from './md/size.md'
 })
 export default class Button extends Vue {}
 </script>
+<style>
+.button {
+  & .vue-wrapper {
+    & .agora-button {
+      margin: 0 5px;
+    }
+  }
+}
+</style>

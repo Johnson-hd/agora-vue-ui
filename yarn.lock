@@ -373,10 +373,10 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-agora-md2vue-loader@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/agora-md2vue-loader/-/agora-md2vue-loader-1.0.1.tgz#3a966b25291d5393d5b7d892969ca54c783d5064"
-  integrity sha512-Ad2Bx+EnDNCHSYonHQL8D41bE5nMQotQxzujCU6FSD0jbCvCeA87a0XKchFOD5EbEthjrdE4og1B1XWjZclCZA==
+agora-md2vue-loader@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/agora-md2vue-loader/-/agora-md2vue-loader-1.0.2.tgz#a1c38ac62ecdc118b6a83fbef35beff2ab5a1809"
+  integrity sha512-OIP2cIHJoILLGZv+tHK9De0wGEa+zxxX4yTA9UfQwEogeJugT0yqgSmxODN1Dl98rti2Lee2H2oIVbGwDSKyTA==
   dependencies:
     loader-utils "^2.0.0"
     marked "^1.1.0"

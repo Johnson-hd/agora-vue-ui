@@ -22,6 +22,42 @@
   border-color: var(--colorPrimary);
 }
 
+.agora-button-primary {
+  background: var(--colorPrimary);
+  border-color: var(--colorPrimary);
+  color: var(--colorPure);
+}
+
+.agora-button-success {
+  background: var(--colorSuccess);
+  border-color: var(--colorSuccess);
+  color: var(--colorPure);
+}
+
+.agora-button-danger {
+  background: var(--colorDanger);
+  border-color: var(--colorDanger);
+  color: var(--colorPure);
+}
+
+.agora-button-info {
+  background: var(--colorInfo);
+  border-color: var(--colorInfo);
+  color: var(--colorPure);
+}
+
+.agora-button-warning {
+  background: var(--colorWarning);
+  border-color: var(--colorWarning);
+  color: var(--colorPure);
+}
+
+.agora-button-link {
+  background: transparent;
+  color: var(--linkColor);
+  border-color: transparent;
+}
+
 .agora-button-size-sm {
   height: var(--buttonHeightSm);
   line-height: calc(var(--buttonHeightSm) - 2px);
